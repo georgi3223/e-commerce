@@ -1,0 +1,134 @@
+section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+section p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+section > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+section > div article {
+    flex: 1 1 calc(25% - 24px);
+    max-width: calc(25% - 24px);
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+section > div article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+}
+
+section > div article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+section > div article h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #020617;
+    margin: 8px 0;
+    text-align: center;
+}
+
+section > div article p {
+    font-size: 14px;
+    color: #475569;
+    margin: 4px 0;
+    text-align: center;
+}
+
+section > div article strong {
+    font-size: 17px;
+    color: #111827;
+}
+
+section > div article div {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section > div article a {
+    background: #4f46e5;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+}
+
+section > div article a:hover {
+    background: #4338ca;
+}
+
+section > div article button {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+section > div article button:hover {
+    background: #15803d;
+}
+
+section > div article a:active,
+section > div article button:active {
+    transform: scale(0.96);
+}
+
+@media (max-width: 1024px) {
+    section > div article {
+        flex: 1 1 calc(33.333% - 24px);
+        max-width: calc(33.333% - 24px);
+    }
+}
+
+@media (max-width: 768px) {
+    section > div article {
+        flex: 1 1 calc(50% - 24px);
+        max-width: calc(50% - 24px);
+    }
+}
+
+@media (max-width: 480px) {
+    section > div article {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
